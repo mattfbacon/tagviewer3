@@ -1,0 +1,11 @@
+-isystem/usr/include/qt
+-isystem/usr/include/qt/QtCore
+-isystem/usr/include/qt/QtGui
+-isystem/usr/include/qt/QtWidgets
+-isystem/usr/include/qt/QtSvg
+-isystem/usr/include/qt/QtSql
+-iquotelib/phantom/src/phantom
+-iquotelib/QFontIcon/QFontIcon
+-iquotelib/QFunctionUtils/src
+-iquotelib/qt-color-picker-tool-button
+-fpic

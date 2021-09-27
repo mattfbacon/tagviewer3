@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<!-- genqrc.sh -->
+<!-- This is a generated file. -->
+<RCC version="1.0">
+<qresource prefix="/">
+	<file>icon.svg</file>
+	<file>MaterialIcons-Regular.ttf</file>
+</qresource>
+</RCC>

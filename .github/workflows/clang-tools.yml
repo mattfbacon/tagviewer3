@@ -1,0 +1,17 @@
+name: clang-tools
+on: [push]
+
+jobs:
+  run-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install packages
+        run: |
+          apt update
+          apt upgrade
+          apt install clang qtbase5-dev qtbase5-dev-tools clang-tidy clang-format
+      - name: Format
+        run: ./clang-format.sh
+      - name: Tidy
+        run: ./clang-tidy.sh

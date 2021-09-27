@@ -1,0 +1,22 @@
+name: build
+on: [push]
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install packages
+        run: |
+          apt update
+          apt upgrade
+          apt install clang qtbase5-dev qtbase5-dev-tools qt5-qmake-bin make
+      - name: Generate Makefile
+        run: qmake -Wall -makefile
+      - name: Build
+        run: make release
+      - name: Upload Built Binary
+        uses: actions/upload-artifact@v2
+        with:
+          name: release-bin
+          path: dist/tagviewer

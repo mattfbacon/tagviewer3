@@ -1,0 +1,15 @@
+[submodule "lib/phantom"]
+	path = lib/phantom
+	url = https://github.com/mattfbacon/phantomstyle.git
+[submodule "lib/QFunctionUtils"]
+	path = lib/QFunctionUtils
+	url = https://github.com/juangburgos/QFunctionUtils.git
+[submodule "lib/QFontIcon"]
+	path = lib/QFontIcon
+	url = https://github.com/mattfbacon/QFontIcon.git
+[submodule "lib/ColorPicker"]
+	path = lib/ColorPicker
+	url = https://github.com/mattfbacon/ColorPicker.git
+[submodule "lib/qmake-unity"]
+	path = lib/qmake-unity
+	url = https://github.com/nmoreaud/qmake-unity.git
